@@ -18,6 +18,9 @@ min-width: 250px;
 font-family: Verdana, Geneva, sans-serif
 }
 
+#map {
+	height: 50%;
+}
  /*Navigation Styles*/
  #headerlist { 
      list-style-type: none;
