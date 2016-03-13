@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html>
 
 <head>
@@ -16,6 +16,7 @@
     <script src="/modernizr-1.5.js"></script> <!--allows browsers to render properly i think-->
     <link href="personal_site_styles.css" rel="stylesheet" type="text/css" />
     <link href="site_project_layout.css" rel="stylesheet" types="text/css" />
+    <link href="tables.css" rel="stylesheet" type="text/css" />
     <style type="text/css">
         section > p:first-of-type:first-letter {
             text-transform: uppercase;
@@ -30,7 +31,7 @@
         <nav class="horizontalNAV">
             <!--navigation class list w/ unordered list w/ horizontal design-->
             <ul id="headerlist">
-                <li><a href="index.html" title="Home">Home</a></li>
+                <li><a href="home.htm" title="Home">Home</a></li>
                 <li><a href="resume.htm" title="Resume">Resume</a></li>
                 <li><a href="blog.htm" title="TBD">TBD</a></li>
                 <li><a href="contact.htm" title="Email">Contact Me</a></li>
@@ -39,7 +40,12 @@
         </nav>
     </header>
 
-    <table class="schedule" border="1">
+    <table class="weeklySchedule" border="1" summary="This table contains the weekly schedule for seoul2045." cellspacing="3" cellpadding="1">
+        <caption>Weekday Schedule</caption>
+        <colgroup>
+            <col class="firstCol" />
+            <col class="dayCols" span="5" />
+        </colgroup>
         <tr>
             <th>Time</th>
             <th>Monday</th>
@@ -47,34 +53,14 @@
             <th>Wednesday</th>
             <th>Thursday</th>
             <th>Friday</th>
-            <th>Saturday</th>
-            <th>Sunday</th>
-        </tr>
-        <tr>
-            <th>0:00</th>
-            <td rowspan="6" colspan="7">Sleep</td>
-        </tr>
-        <tr>
-            <th>1:00</th>
-        </tr>
-        <tr>
-            <th>2:00</th>
-        </tr>
-        <tr>
-            <th>3:00</th>
-        </tr>
-        <tr>
-            <th>4:00</th>
-        </tr>
-        <tr>
-            <th>5:00</th>
         </tr>
         <tr>
             <th>6:00</th>
-            <td rowspan="2" colspan="5">Walk Dog & Exercise</td>
+            <td rowspan="1" colspan="5">Walk the dog</td>
         </tr>
         <tr>
             <th>7:00</th>
+            <td rowspan="1" colspan="5">Exercise: run, free-weights, stretching</td>
         </tr>
         <tr>
             <th>8:00</th>
@@ -82,7 +68,90 @@
         </tr>
         <tr>
             <th>9:00</th>
-            <td rowspan="12" colspan="5">Work</td>
+            <td rowspan="1" colspan="5">Commute->work: study Korean, read book, meditate/nap</td>
+        </tr>
+        <tr>
+            <th>10:00</th>
+            <td rowspan="1" colspan="5">Start workday: check email and build daily itinerary</td>
+        </tr>
+        <tr>
+            <th>11:00</th>
+            <td rowspan="1" colspan="5">work=complete</td>
+        </tr>
+        <tr>
+            <th>12:00</th>
+            <td rowspan="1" colspan="5">work=complete</td>
+        </tr>
+        <tr>
+            <th>12:30</th>
+            <td rowspan="3" colspan="5">Lunch</td>
+        </tr>
+        <tr>
+            <th>13:00</th>
+        </tr>
+        <tr>
+            <th>13:30</th>
+        </tr>
+        <tr>
+            <th>14:00</th>
+            <td rowspan="1" colspan="5">work=complete</td>
+        </tr>
+        <tr>
+            <th>15:00</th>
+            <td rowspan="1" colspan="5">work=complete</td>
+        </tr>
+        <tr>
+            <th>16:00</th>
+            <td rowspan="1" colspan="5">work=complete</td>
+        </tr>
+        <tr>
+            <th>17:00</th>
+            <td rowspan="1" colspan="5">work=complete</td>
+        </tr>
+        <tr>
+            <th>18:00</th>
+            <td rowspan="1" colspan="5">work=complete</td>
+        </tr>
+        <tr>
+            <th>19:00</th>
+            <td rowspan="1" colspan="5">End workday: commute->home</td>
+        </tr>
+        <tr>
+            <th>20:00</th>
+            <td rowspan="3" colspan="5">Dinner & relax</td>
+        </tr>
+        <tr>
+            <th>21:00</th>
+        </tr>
+        <tr>
+            <th>22:00</th>
+        </tr>
+    </table>
+    <br />
+    <table class="weekendSchedule" border="1" summary="This table is for the weekend schedule only.">
+        <caption>Weekend Schedule</caption>
+        <colgroup>
+            <col class="firstCol" />
+            <col class="dayCols" />
+        </colgroup>
+        <thead>
+            <tr>
+                <th>Time</th>
+                <th>Saturday</th>
+                <th>Sunday</th>
+            </tr>
+        </thead>
+        <tr>
+            <th>6:00</th>
+        </tr>
+        <tr>
+            <th>7:00</th>
+        </tr>
+        <tr>
+            <th>8:00</th>
+        </tr>
+        <tr>
+            <th>9:00</th>
         </tr>
         <tr>
             <th>10:00</th>
@@ -119,10 +188,28 @@
         </tr>
         <tr>
             <th>21:00</th>
-            <td rowspan="4" colspan="7">Sleep</td>
         </tr>
         <tr>
             <th>22:00</th>
+        </tr>
+    </table>
+    <br />
+    <table class="sleepSchedule" border="1" summary="This table is for containing sleep schedule only.">
+        <caption>Sleep Schedule</caption>
+        <colgroup>
+            <col class="firstCol" />
+            <col class="dayCols" span="2" />
+        </colgroup>
+            <thead>
+                <tr>
+                    <th>Time</th>
+                    <th>Weekday</th>
+                    <th>Weekend</th>
+                </tr>
+            </thead>
+        <tr>
+            <th>22:30</th>
+            <td rowspan="3" colspan="2">Sleep</td>
         </tr>
         <tr>
             <th>23:00</th>
@@ -131,9 +218,25 @@
             <th>24:00</th>
         </tr>
 
-
-
-
+        <tr>
+            <th>0:00</th>
+            <td rowspan="6" colspan="2">Sleep</td>
+        </tr>
+        <tr>
+            <th>1:00</th>
+        </tr>
+        <tr>
+            <th>2:00</th>
+        </tr>
+        <tr>
+            <th>3:00</th>
+        </tr>
+        <tr>
+            <th>4:00</th>
+        </tr>
+        <tr>
+            <th>5:00</th>
+        </tr>
     </table>
 			
     <aside>
