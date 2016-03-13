@@ -1,4 +1,4 @@
-﻿/*
+/*
    Personal Website Style Sheet
    Author: seoul2045
    Date:   2016-02-25
@@ -9,24 +9,44 @@
 
 /*Body Styles*/
 body {
+height: 100%;
 margin: 0px auto;
-padding: 0px;
-line-height: 1.5em;
 width: 98%;
+line-height: 1.5em;
+padding: 0px;
 max-width: 980px;
 min-width: 250px;
 font-family: Verdana, Geneva, sans-serif
 }
 
 #map {
-	height: 50%;
+    height: 65%;
+    margin: 0px;
+    padding: 0px;
 }
+ 
  /*Navigation Styles*/
- #headerlist { 
+#headerlogo {
+    position: absolute;
+    top: 20px;
+    left:20px;
+}
+
+ #header {
+     width: 100%;
+     padding-left: 10px;
+     padding-right: 10px;
+     margin: 0 auto; 
+ }
+
+ #headerlist {
+/*float: right;*/      
      list-style-type: none;
      background-color: rgb(176,196,222); /*lightsteelblue*/
-     line-height:2.0em;
-     padding-left:1.0em;
+     line-height: 2.0em;
+     padding-left:1.0em;         
+     width: 75%;
+     font-size: 15px;
  }
 
  #headerlist li a {
@@ -35,11 +55,12 @@ font-family: Verdana, Geneva, sans-serif
  }
 
  #headerlist li:hover {
-     background-color:rgb(83,142,213);
+     text-decoration: underline;
+     background-color: rgb(83,142,213);
  }
 
 #headerlist li:first-of-type {
-     text-transform:uppercase;
+     text-transform: uppercase;
  }
 
  #headerlist li {
@@ -47,7 +68,7 @@ font-family: Verdana, Geneva, sans-serif
      float: left;
      text-align: center;
      width: 20%;
-     background-color: lightsteelblue;
+     background-color: rgb(176,196,222); /*lightsteelblue*/
      margin-bottom: 4px;
  }
 
@@ -66,20 +87,17 @@ font-family: Verdana, Geneva, sans-serif
 	width: 66%;
 	float: left;
  }
-
- #header {
-     width: 100%;
-     padding-left: 10px;
-     padding-right: 10px;
- /*  margin: 0 auto; */    
- }
-
+ 
  #education, #experience, #skills { /*section with id #education*/
      border-bottom: 1px black solid; /*divider between resume sections*/
      margin-top: 20px;
      margin-bottom: 20px;
  }
 
+/*Table Schedule*/
+table.schedule {
+    float: right;
+}
 
  /*Aside Style*/
  aside {
